@@ -1,64 +1,69 @@
-# 📰 Compose Article – Lectura de Artículo con Jetpack Compose
+# 💼 Tarjeta de Presentación – Jetpack Compose
 
-**Compose Article** es una aplicación simple desarrollada con **Jetpack Compose**, diseñada para mostrar una pantalla de artículo o contenido informativo con texto e imagen. Este proyecto fue realizado como parte de la práctica de la materia *Programación en Dispositivos Móviles*, enfocada en aplicar layouts, estilos de texto y recursos gráficos en Compose.
+**Tarjeta de Presentación** es una aplicación creada con **Jetpack Compose** que simula una tarjeta personal digital. Muestra de forma clara y ordenada información básica de una persona como el nombre, el cargo y los datos de contacto. Este proyecto fue realizado como parte de la materia *Programación en Dispositivos Móviles*, integrando conceptos de diseño visual y estructuración de UI en Compose.
 
 ---
 
 ## 📱 ¿Qué muestra esta app?
 
-La interfaz de la aplicación incluye:
+La pantalla se divide en dos secciones principales:
 
-- Una **imagen superior** ocupando todo el ancho de la pantalla.
-- Un **título principal** en texto grande y con estilo personalizado.
-- Un **párrafo introductorio** justificado, con padding lateral.
-- Un **segundo párrafo** con texto también justificado y más detallado.
+1. **Perfil profesional:**
+   - Imagen o logotipo superior
+   - Nombre completo (Derlis Gamarra)
+   - Título o descripción personal (por ejemplo, “Desarrollador Android Apasionado”)
 
-Todo el contenido está organizado verticalmente y estilizado para una buena experiencia de lectura.
+2. **Información de contacto:**
+   - Teléfono
+   - Usuario de red social (ej: @derlsPRO)
+   - Dirección de correo electrónico
+
+Cada dato está acompañado de un ícono representativo y alineado correctamente.
 
 ---
 
 ## 🧩 Componentes utilizados
 
-- `Column()` para estructurar verticalmente los elementos.
-- `Image()` para mostrar una imagen destacada (cabecera).
-- `Text()` con `fontSize`, `padding`, y `textAlign` para estilo.
-- `painterResource()` para cargar la imagen desde `res/drawable`.
-- `Modifier.fillMaxWidth()` y `dp` para controlar el tamaño y espaciado.
+- `Column()` y `Row()` para estructurar el layout.
+- `Image()` para mostrar el logotipo o imagen superior.
+- `Text()` con `fontSize`, `fontWeight`, `color` para personalizar textos.
+- `Icon()` junto a texto para representar teléfono, redes y email.
+- `Modifier.fillMaxSize()`, `padding()`, `Alignment`, `Arrangement` para organización visual.
+- `Material Icons` para íconos de contacto.
 
 ---
 
-## 🎨 Especificaciones visuales implementadas
+## 🎨 Estilo y alineación
 
-- La imagen ocupa **el 100% del ancho** (`fillMaxWidth()`).
-- El título tiene **tamaño de fuente `24sp`** y padding de `16.dp` en todos los lados.
-- El primer párrafo tiene **padding lateral (`start` y `end`) de 16.dp** y está **justificado**.
-- El segundo párrafo también tiene padding completo de `16.dp` y alineación justificada.
+- Todo el contenido está **centrado vertical y horizontalmente**.
+- El nombre tiene estilo **negrita** y tamaño grande (`28sp`).
+- La descripción profesional y los datos de contacto usan tamaños y colores adecuados.
+- Íconos en verde Android (`Color(0xFF3DDC84)`), acordes al diseño Material.
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 
-- Kotlin con Jetpack Compose
-- Android Studio (Material 3)
-- Anotaciones `@Composable` y `@Preview`
-- Archivos `drawable` y `string` para recursos reutilizables
+- Kotlin + Jetpack Compose
+- Android Studio
+- Material 3
+- Uso de recursos locales (`drawable`) y `Icons.Default`
 
 ---
 
-## 📂 Recursos utilizados
+## 📂 Recursos
 
-- Imagen: `header.png` (ubicada en `res/drawable`)
-- Texto: Personalizado (puede reemplazarse por contenido dinámico si se desea)
-- Colores y estilos: predeterminados del tema actual
+- Imagen: `android_logo.png` o similar ubicada en `res/drawable`
+- Íconos: importados desde `androidx.compose.material.icons`
 
 ---
 
 ## 🚀 Cómo probar
 
-1. Abrí el proyecto en Android Studio.
-2. Verificá que tengas una imagen colocada en `res/drawable` con el nombre correcto.
-3. Ejecutá la app en un emulador o dispositivo físico.
-4. Observá el contenido centrado, legible y adaptado para móviles.
+1. Cloná o abrí el proyecto en Android Studio.
+2. Verificá que la imagen esté en `res/drawable` y se llame igual que en el código.
+3. Ejecutá el proyecto en un emulador o dispositivo.
+4. Observá cómo se adapta la presentación a la pantalla y se muestra de forma profesional.
 
 ---
 
@@ -70,4 +75,5 @@ Todo el contenido está organizado verticalmente y estilizado para una buena exp
 
 ---
 
-Este ejercicio permite entender cómo construir una pantalla informativa con imagen, texto estilizado y diseño moderno en Android usando Compose. ✍️
+Esta tarjeta representa una forma profesional, moderna y adaptable de presentarte con estilo y claridad en aplicaciones Android. 👨‍💻📱
+
